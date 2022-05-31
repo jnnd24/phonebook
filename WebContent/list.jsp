@@ -41,6 +41,9 @@
 			<td>회사(company)</td>
 			<td><%=personList.get(i).getCompany() %></td>
 		</tr>
+		<tr>
+			<td><a href="./delete.jsp?id=<%=personList.get(i).getPersonId()%>">[삭제]</a></td>
+		</tr>
 	</table>
 	<br>
 	<%} %>

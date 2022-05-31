@@ -119,6 +119,7 @@ public class PhoneDao {
 					pstmt.setString(3, '%' + keword + '%'); // ?(물음표) 중 3번째, 순서중요
 				} else {
 					pstmt = conn.prepareStatement(query); // 쿼리로 만들기
+					System.out.println(query);
 				}
 
 				rs = pstmt.executeQuery();
